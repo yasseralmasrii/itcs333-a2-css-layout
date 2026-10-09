@@ -1,6 +1,6 @@
 #site-header {
    padding: 16px;
-   border-bottom: solid 1px gray;
+   border-bottom: solid 2px black;
 }
 
 .card {
@@ -10,8 +10,9 @@
 
 .card-grid {
    display: grid;
-   gap: 16 px;
-   grid-template-columns: repeat(3, 1 fr);
+   gap: 20px;
+   grid-gap: 20px;
+   grid-template-columns: repeat(3, 1fr);
 }
 
 form input {
