@@ -1,7 +1,30 @@
-/* ITCS333 A2 starter — implement the design spec from index.html here.
-   See README rubric for the graded checks. Do not use inline styles. */
+#site-header {
+   padding: 16px;
+   border-bottom: solid 1px gray;
+}
 
-/* TODO: style #site-header (padding, border-bottom) */
-/* TODO: style .card (padding, border, gap) and .card-grid (display, gap, 3 columns) */
-/* TODO: style form inputs (padding) and a :focus state */
-/* TODO: add a @media (max-width: 700px) query collapsing .card-grid to one column */
+.card {
+   padding: 12px;
+   border: solid 1px gray;
+}
+
+.card-grid {
+   display: grid;
+   gap: 16 px;
+   grid-template-columns: repeat(3, 1 fr);
+}
+
+form input {
+   padding: 6px;
+}
+
+form input:focus {
+   border-color: blue;
+   outline: solid 2px blue;
+}
+
+@media (max-width: 700px) {
+   .card-grid {
+      grid-template-columns: 1fr;
+   }
+}
